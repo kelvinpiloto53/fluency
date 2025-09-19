@@ -6,10 +6,12 @@
     --page-background: #f8f9fa; /* Fundo cinza claro */
     --white: #fff;
     --container-width: 1280px; /* Container mais largo */
+    --font-one: 'IBM Plex Sans', sans-serif;
+    --font-two: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--font-two);
     color: var(--text-color);
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -55,11 +57,11 @@ img {
   0% {
     opacity: 0;
     transform: translateY(40px);
-  }
-  100% {
+}
+100% {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 }
 
 /* De cima para baixo */
@@ -70,11 +72,11 @@ img {
   0% {
     opacity: 0;
     transform: translateY(-40px);
-  }
-  100% {
+}
+100% {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 }
 
 /* Da esquerda para direita */
@@ -85,11 +87,11 @@ img {
   0% {
     opacity: 0;
     transform: translateX(-40px);
-  }
-  100% {
+}
+100% {
     opacity: 1;
     transform: translateX(0);
-  }
+}
 }
 
 /* Da direita para esquerda */
@@ -100,11 +102,11 @@ img {
   0% {
     opacity: 0;
     transform: translateX(40px);
-  }
-  100% {
+}
+100% {
     opacity: 1;
     transform: translateX(0);
-  }
+}
 }
 
 /* Delays opcionais */
@@ -126,12 +128,12 @@ img {
     opacity: 0;
     filter: blur(10px);
     transform: scale(1.05);
-  }
-  100% {
+}
+100% {
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
-  }
+}
 }
 
 
@@ -144,14 +146,14 @@ img {
     box-shadow: none;
     display: block;
     top: -70px;
-  width: 100%;
-  transition: all 0.6s ease;
+    width: 100%;
+    transition: all 0.6s ease;
 }
 .header-container {
     background-color: var(--white);
     padding: 0;
     display: flex
-;
+    ;
     align-items: center;
     flex-direction: row;
 }
@@ -189,6 +191,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     transition: all 0.3s ease;
+    font-family: var(--font-one);
 }
 .main-navigation ul li a:hover {
     color: var(--secondary-color);
@@ -199,7 +202,56 @@ nav#site-navigation ul li {
     text-align: center;
 }
 
-/* Hero Section */
+/* Banner Section */
+#form-um button {
+    width: 100%;
+    border-radius: 16px;
+    padding: 1em;
+    height: auto;
+}
+
+#form-um #wpforms-5151-field_6 input {height: auto;}
+
+.formulario {
+    background: color(srgb 1 1 1 / 0.9);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-width: 64%;
+    padding: 1em;
+    border-radius: 16px;
+    margin-right: 0;
+    margin-top: -13em;
+}
+
+.formulario div#wpforms-5151 {
+    margin: 0;
+    padding: 0;
+}
+
+#form-um .wpforms-field {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+#form-um .wpforms-field-label {
+    margin: 0;
+    font-weight: 500;
+    color: #878787;
+}
+
+#form-um input {
+    max-width: 100%;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #878787;
+    height: 34px;
+}
+
+#form-um input:focus {
+    box-shadow: 0 0 ;
+}
+
 .hero-section {
     padding: 80px 0;
     height: 550px;
@@ -207,18 +259,19 @@ nav#site-navigation ul li {
     background-size: cover;
     background-position: top;
 }
+
 section.hero-products {
     color: #fff;
     background: #6B47ED;
     padding: 3em;
     text-align: center;
 }
+
 .formsec {
-    display: grid
-;
+    display: grid ;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
-    align-items: end;
+    align-items: center;
     align-content: center;
     justify-items: start;
     height: 100vh;
@@ -227,21 +280,23 @@ section.hero-products {
 h1.hero-title {
     color: #fff;
     font-size: 40px;
-    position: relative;
-    bottom: -60px;
-    text-shadow: 2px 0px 6px #0000009e;
+    text-shadow: 0px 4px 3px #000000bd;
+    margin-top: 4em;
 }
+
 .hero-title {
     font-size: 3rem;
     color: var(--primary-color);
     font-weight: 700;
 }
+
 .hero-subtitle {
     font-size: 1.2rem;
     color: var(--text-color);
     max-width: 600px;
     margin: 0 auto 30px;
 }
+
 .hero-button {
     background-color: var(--secondary-color);
     color: var(--white);
@@ -251,11 +306,11 @@ h1.hero-title {
     font-weight: 600;
     display: inline-block;
 }
+
 .hero-button:hover {
     background-color: #b81237;
     color: var(--white);
 }
-
 /* Generic Section */
 .content-section {
     padding: 60px 0;
@@ -323,15 +378,15 @@ h1.hero-title {
     right: 0;
     width: 200px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
+}
 
-  .menu.active {
+.menu.active {
     display: flex;
-  }
+}
 
-  .menu-toggle {
+.menu-toggle {
     display: block;
-  }
+}
 }
 
 
